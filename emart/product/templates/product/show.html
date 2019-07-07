@@ -1,0 +1,8 @@
+{% load static %}
+{% for i in product %}
+
+<h3> {{ i.ProductName }} </h3>
+<p> {{ i.StandardPrice }} </p>
+<img src = url('{{ MEDIA_URL }} {{ i.ProductImage }}')> 
+url('{{ MEDIA_URL }}{{ i.ProductImage }}')
+{% endfor %}
